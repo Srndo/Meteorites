@@ -8,22 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		F4ECC433296362CF0054EB01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC432296362CF0054EB01 /* AppDelegate.swift */; };
-		F4ECC435296362CF0054EB01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC434296362CF0054EB01 /* SceneDelegate.swift */; };
-		F4ECC437296362CF0054EB01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC436296362CF0054EB01 /* ViewController.swift */; };
-		F4ECC43A296362CF0054EB01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC438296362CF0054EB01 /* Main.storyboard */; };
 		F4ECC43C296362D00054EB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC43B296362D00054EB01 /* Assets.xcassets */; };
 		F4ECC43F296362D00054EB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC43D296362D00054EB01 /* LaunchScreen.storyboard */; };
+		F4ECC447296364200054EB01 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC446296364200054EB01 /* AppCoordinator.swift */; };
+		F4ECC450296366560054EB01 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC44F296366560054EB01 /* Coordinator.swift */; };
+		F4ECC454296369E30054EB01 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC453296369E30054EB01 /* AppContext.swift */; };
+		F4ECC45929636ADA0054EB01 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC45629636ADA0054EB01 /* TabBarCoordinator.swift */; };
+		F4ECC45A29636ADA0054EB01 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC45729636ADA0054EB01 /* TabBarViewModel.swift */; };
+		F4ECC45B29636ADA0054EB01 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC45829636ADA0054EB01 /* TabBarViewController.swift */; };
+		F4ECC45F29636B410054EB01 /* SuperTabBarCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC45E29636B410054EB01 /* SuperTabBarCoordinators.swift */; };
+		F4ECC46229636B970054EB01 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC46129636B970054EB01 /* ListCoordinator.swift */; };
+		F4ECC46529636BBB0054EB01 /* MapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC46429636BBB0054EB01 /* MapCoordinator.swift */; };
+		F4ECC46929636C9C0054EB01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC46729636C9C0054EB01 /* BaseViewController.swift */; };
+		F4ECC46A29636C9C0054EB01 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC46829636C9C0054EB01 /* BaseViewModel.swift */; };
+		F4ECC46C29636D2A0054EB01 /* ShowLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC46B29636D2A0054EB01 /* ShowLoading.swift */; };
+		F4ECC47229636DAC0054EB01 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC47029636DAC0054EB01 /* LoadingView.xib */; };
+		F4ECC47329636DAC0054EB01 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC47129636DAC0054EB01 /* LoadingView.swift */; };
+		F4ECC47629636E2E0054EB01 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC47529636E2E0054EB01 /* Observable.swift */; };
+		F4ECC47929636E700054EB01 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC47829636E700054EB01 /* ApiService.swift */; };
+		F4ECC47B29636E7B0054EB01 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC47A29636E7B0054EB01 /* DatabaseService.swift */; };
+		F4ECC47E29636F180054EB01 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC47D29636F180054EB01 /* UIView.swift */; };
+		F4ECC481296373BC0054EB01 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC480296373BC0054EB01 /* Theme.swift */; };
+		F4ECC483296375D70054EB01 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC482296375D70054EB01 /* ListViewModel.swift */; };
+		F4ECC485296375E10054EB01 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC484296375E10054EB01 /* ListViewController.swift */; };
+		F4ECC487296375EA0054EB01 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC486296375EA0054EB01 /* List.storyboard */; };
+		F4ECC4892963765C0054EB01 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4882963765C0054EB01 /* Storyboarded.swift */; };
+		F4ECC48D296377A50054EB01 /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC48C296377A50054EB01 /* ImageList.swift */; };
+		F4ECC48F296379EB0054EB01 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC48E296379EB0054EB01 /* MapViewController.swift */; };
+		F4ECC49129637A100054EB01 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC49029637A100054EB01 /* MapViewModel.swift */; };
+		F4ECC49329637A320054EB01 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC49229637A320054EB01 /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4ECC42F296362CF0054EB01 /* Meteorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meteorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4ECC432296362CF0054EB01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4ECC434296362CF0054EB01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F4ECC436296362CF0054EB01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4ECC439296362CF0054EB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4ECC43B296362D00054EB01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4ECC43E296362D00054EB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4ECC440296362D00054EB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4ECC446296364200054EB01 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F4ECC44F296366560054EB01 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F4ECC453296369E30054EB01 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		F4ECC45629636ADA0054EB01 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F4ECC45729636ADA0054EB01 /* TabBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		F4ECC45829636ADA0054EB01 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F4ECC45E29636B410054EB01 /* SuperTabBarCoordinators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperTabBarCoordinators.swift; sourceTree = "<group>"; };
+		F4ECC46129636B970054EB01 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		F4ECC46429636BBB0054EB01 /* MapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinator.swift; sourceTree = "<group>"; };
+		F4ECC46729636C9C0054EB01 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4ECC46829636C9C0054EB01 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F4ECC46B29636D2A0054EB01 /* ShowLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowLoading.swift; sourceTree = "<group>"; };
+		F4ECC47029636DAC0054EB01 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F4ECC47129636DAC0054EB01 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F4ECC47529636E2E0054EB01 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		F4ECC47829636E700054EB01 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		F4ECC47A29636E7B0054EB01 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		F4ECC47D29636F180054EB01 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F4ECC480296373BC0054EB01 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F4ECC482296375D70054EB01 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		F4ECC484296375E10054EB01 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F4ECC486296375EA0054EB01 /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
+		F4ECC4882963765C0054EB01 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F4ECC48C296377A50054EB01 /* ImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
+		F4ECC48E296379EB0054EB01 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F4ECC49029637A100054EB01 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		F4ECC49229637A320054EB01 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +104,143 @@
 		F4ECC431296362CF0054EB01 /* Meteorites */ = {
 			isa = PBXGroup;
 			children = (
-				F4ECC432296362CF0054EB01 /* AppDelegate.swift */,
-				F4ECC434296362CF0054EB01 /* SceneDelegate.swift */,
-				F4ECC436296362CF0054EB01 /* ViewController.swift */,
-				F4ECC438296362CF0054EB01 /* Main.storyboard */,
+				F4ECC44A296364630054EB01 /* Application */,
+				F4ECC44B296365680054EB01 /* Stories */,
+				F4ECC47729636E630054EB01 /* Services */,
+				F4ECC45C29636B100054EB01 /* Common */,
+				F4ECC47F296373AD0054EB01 /* Resources */,
 				F4ECC43B296362D00054EB01 /* Assets.xcassets */,
 				F4ECC43D296362D00054EB01 /* LaunchScreen.storyboard */,
-				F4ECC440296362D00054EB01 /* Info.plist */,
 			);
 			path = Meteorites;
+			sourceTree = "<group>";
+		};
+		F4ECC44A296364630054EB01 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC432296362CF0054EB01 /* AppDelegate.swift */,
+				F4ECC453296369E30054EB01 /* AppContext.swift */,
+				F4ECC446296364200054EB01 /* AppCoordinator.swift */,
+				F4ECC440296362D00054EB01 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F4ECC44B296365680054EB01 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC45529636ADA0054EB01 /* TabBar */,
+				F4ECC46029636B7C0054EB01 /* List */,
+				F4ECC46329636BAF0054EB01 /* Map */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		F4ECC45529636ADA0054EB01 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC45629636ADA0054EB01 /* TabBarCoordinator.swift */,
+				F4ECC45729636ADA0054EB01 /* TabBarViewModel.swift */,
+				F4ECC45829636ADA0054EB01 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F4ECC45C29636B100054EB01 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC45D29636B1F0054EB01 /* Protocols */,
+				F4ECC47C29636F020054EB01 /* Extensions */,
+				F4ECC46D29636D7C0054EB01 /* UI */,
+				F4ECC46629636C9C0054EB01 /* BaseView */,
+				F4ECC47529636E2E0054EB01 /* Observable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4ECC45D29636B1F0054EB01 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC46B29636D2A0054EB01 /* ShowLoading.swift */,
+				F4ECC45E29636B410054EB01 /* SuperTabBarCoordinators.swift */,
+				F4ECC44F296366560054EB01 /* Coordinator.swift */,
+				F4ECC4882963765C0054EB01 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F4ECC46029636B7C0054EB01 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC46129636B970054EB01 /* ListCoordinator.swift */,
+				F4ECC484296375E10054EB01 /* ListViewController.swift */,
+				F4ECC482296375D70054EB01 /* ListViewModel.swift */,
+				F4ECC486296375EA0054EB01 /* List.storyboard */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F4ECC46329636BAF0054EB01 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC46429636BBB0054EB01 /* MapCoordinator.swift */,
+				F4ECC48E296379EB0054EB01 /* MapViewController.swift */,
+				F4ECC49029637A100054EB01 /* MapViewModel.swift */,
+				F4ECC49229637A320054EB01 /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		F4ECC46629636C9C0054EB01 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC46729636C9C0054EB01 /* BaseViewController.swift */,
+				F4ECC46829636C9C0054EB01 /* BaseViewModel.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		F4ECC46D29636D7C0054EB01 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC46F29636DAB0054EB01 /* LoadingView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F4ECC46F29636DAB0054EB01 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC47129636DAC0054EB01 /* LoadingView.swift */,
+				F4ECC47029636DAC0054EB01 /* LoadingView.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		F4ECC47729636E630054EB01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC47829636E700054EB01 /* ApiService.swift */,
+				F4ECC47A29636E7B0054EB01 /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F4ECC47C29636F020054EB01 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC47D29636F180054EB01 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4ECC47F296373AD0054EB01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC480296373BC0054EB01 /* Theme.swift */,
+				F4ECC48C296377A50054EB01 /* ImageList.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +250,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4ECC443296362D00054EB01 /* Build configuration list for PBXNativeTarget "Meteorites" */;
 			buildPhases = (
+				F4ECC494296382480054EB01 /* Swiftformat */,
+				F4ECC495296382740054EB01 /* Swiftlint */,
 				F4ECC42B296362CF0054EB01 /* Sources */,
 				F4ECC42C296362CF0054EB01 /* Frameworks */,
 				F4ECC42D296362CF0054EB01 /* Resources */,
@@ -125,36 +303,93 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ECC47229636DAC0054EB01 /* LoadingView.xib in Resources */,
 				F4ECC43F296362D00054EB01 /* LaunchScreen.storyboard in Resources */,
+				F4ECC49329637A320054EB01 /* Map.storyboard in Resources */,
+				F4ECC487296375EA0054EB01 /* List.storyboard in Resources */,
 				F4ECC43C296362D00054EB01 /* Assets.xcassets in Resources */,
-				F4ECC43A296362CF0054EB01 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F4ECC494296382480054EB01 /* Swiftformat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftformat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+		F4ECC495296382740054EB01 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F4ECC42B296362CF0054EB01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4ECC437296362CF0054EB01 /* ViewController.swift in Sources */,
+				F4ECC47B29636E7B0054EB01 /* DatabaseService.swift in Sources */,
+				F4ECC47629636E2E0054EB01 /* Observable.swift in Sources */,
+				F4ECC483296375D70054EB01 /* ListViewModel.swift in Sources */,
+				F4ECC45F29636B410054EB01 /* SuperTabBarCoordinators.swift in Sources */,
+				F4ECC47929636E700054EB01 /* ApiService.swift in Sources */,
+				F4ECC45B29636ADA0054EB01 /* TabBarViewController.swift in Sources */,
+				F4ECC46529636BBB0054EB01 /* MapCoordinator.swift in Sources */,
+				F4ECC447296364200054EB01 /* AppCoordinator.swift in Sources */,
+				F4ECC48F296379EB0054EB01 /* MapViewController.swift in Sources */,
+				F4ECC454296369E30054EB01 /* AppContext.swift in Sources */,
+				F4ECC48D296377A50054EB01 /* ImageList.swift in Sources */,
+				F4ECC46929636C9C0054EB01 /* BaseViewController.swift in Sources */,
+				F4ECC45929636ADA0054EB01 /* TabBarCoordinator.swift in Sources */,
+				F4ECC46C29636D2A0054EB01 /* ShowLoading.swift in Sources */,
+				F4ECC47329636DAC0054EB01 /* LoadingView.swift in Sources */,
+				F4ECC46A29636C9C0054EB01 /* BaseViewModel.swift in Sources */,
+				F4ECC4892963765C0054EB01 /* Storyboarded.swift in Sources */,
+				F4ECC49129637A100054EB01 /* MapViewModel.swift in Sources */,
+				F4ECC47E29636F180054EB01 /* UIView.swift in Sources */,
+				F4ECC4492963642F0054EB01 /* Configuration.swift in Sources */,
+				F4ECC485296375E10054EB01 /* ListViewController.swift in Sources */,
+				F4ECC450296366560054EB01 /* Coordinator.swift in Sources */,
+				F4ECC45A29636ADA0054EB01 /* TabBarViewModel.swift in Sources */,
+				F4ECC481296373BC0054EB01 /* Theme.swift in Sources */,
+				F4ECC46229636B970054EB01 /* ListCoordinator.swift in Sources */,
 				F4ECC433296362CF0054EB01 /* AppDelegate.swift in Sources */,
-				F4ECC435296362CF0054EB01 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F4ECC438296362CF0054EB01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4ECC439296362CF0054EB01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4ECC43D296362D00054EB01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +527,10 @@
 				INFOPLIST_FILE = Meteorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +556,10 @@
 				INFOPLIST_FILE = Meteorites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

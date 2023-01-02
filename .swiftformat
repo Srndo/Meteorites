@@ -1,0 +1,9 @@
+# format options
+--indent 4
+--swiftversion 5.3
+--importgrouping testable-bottom
+--ifdef no-indent
+--disable wrapMultilineStatementBraces
+
+# file options
+--exclude Pods,Carthage
