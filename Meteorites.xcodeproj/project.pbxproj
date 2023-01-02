@@ -11,6 +11,7 @@
 		F4ECC43C296362D00054EB01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC43B296362D00054EB01 /* Assets.xcassets */; };
 		F4ECC43F296362D00054EB01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC43D296362D00054EB01 /* LaunchScreen.storyboard */; };
 		F4ECC447296364200054EB01 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC446296364200054EB01 /* AppCoordinator.swift */; };
+		F4ECC4492963642F0054EB01 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4482963642F0054EB01 /* Configuration.swift */; };
 		F4ECC450296366560054EB01 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC44F296366560054EB01 /* Coordinator.swift */; };
 		F4ECC454296369E30054EB01 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC453296369E30054EB01 /* AppContext.swift */; };
 		F4ECC45929636ADA0054EB01 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC45629636ADA0054EB01 /* TabBarCoordinator.swift */; };
@@ -46,6 +47,7 @@
 		F4ECC43E296362D00054EB01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4ECC440296362D00054EB01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4ECC446296364200054EB01 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F4ECC4482963642F0054EB01 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		F4ECC44F296366560054EB01 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F4ECC453296369E30054EB01 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		F4ECC45629636ADA0054EB01 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				F4ECC432296362CF0054EB01 /* AppDelegate.swift */,
 				F4ECC453296369E30054EB01 /* AppContext.swift */,
 				F4ECC446296364200054EB01 /* AppCoordinator.swift */,
+				F4ECC4482963642F0054EB01 /* Configuration.swift */,
 				F4ECC440296362D00054EB01 /* Info.plist */,
 			);
 			path = Application;
