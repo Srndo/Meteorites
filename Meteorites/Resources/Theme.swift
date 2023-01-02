@@ -30,7 +30,7 @@ class Theme {
     }
 
     private static func colorByInterfaceStyle(light: UIColor, dark: UIColor? = nil) -> UIColor {
-        return UIColor { (traitCollection: UITraitCollection) -> UIColor in
+        UIColor { (traitCollection: UITraitCollection) -> UIColor in
             if traitCollection.userInterfaceStyle == .dark, let dark {
                 return dark
             }

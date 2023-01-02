@@ -16,7 +16,7 @@ class Coordinator {
 
     /// Initialize view controller with appropriate viewmodel and show initialized view.
     @discardableResult
-    func start() -> UIViewController? { return nil }
+    func start() -> UIViewController? { nil }
 
     /// Notify the parent that the child has finished their task and is ready to deinit.
     func finish() {}
