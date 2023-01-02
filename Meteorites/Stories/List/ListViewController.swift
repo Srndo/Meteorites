@@ -5,6 +5,12 @@
 //  Created by Simon Sestak on 02/01/2023.
 //
 
-import Foundation
+import UIKit
 
-class ListViewController: BaseViewController<ListViewModel>, Storyboarded {}
+class ListViewController: BaseViewController<ListViewModel>, Storyboarded {
+    @IBOutlet var requestButton: UIButton!
+
+    @IBAction func requestButtonTap(_: Any) {
+        viewModel.sendRequest()
+    }
+}

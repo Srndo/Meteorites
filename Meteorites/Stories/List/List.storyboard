@@ -16,9 +16,30 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIM-zT-tMI">
+                                <rect key="frame" x="155" y="402" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="IZd-Ya-4JY"/>
+                                    <constraint firstAttribute="height" constant="40" id="su4-PQ-TmJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="requestButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v6J-7f-7Xj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iIM-zT-tMI" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fon-fO-RA3"/>
+                            <constraint firstItem="iIM-zT-tMI" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gtu-zk-VXt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="requestButton" destination="iIM-zT-tMI" id="E6d-M7-ZyM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
