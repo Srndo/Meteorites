@@ -38,6 +38,8 @@
 		F4ECC48F296379EB0054EB01 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC48E296379EB0054EB01 /* MapViewController.swift */; };
 		F4ECC49129637A100054EB01 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC49029637A100054EB01 /* MapViewModel.swift */; };
 		F4ECC49329637A320054EB01 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC49229637A320054EB01 /* Map.storyboard */; };
+		F4ECC498296384C20054EB01 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC497296384C20054EB01 /* Alamofire */; };
+		F4ECC49B296385070054EB01 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC49A296385070054EB01 /* PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4ECC498296384C20054EB01 /* Alamofire in Frameworks */,
+				F4ECC49B296385070054EB01 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +268,10 @@
 			dependencies = (
 			);
 			name = Meteorites;
+			packageProductDependencies = (
+				F4ECC497296384C20054EB01 /* Alamofire */,
+				F4ECC49A296385070054EB01 /* PromiseKit */,
+			);
 			productName = Meteorites;
 			productReference = F4ECC42F296362CF0054EB01 /* Meteorites.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +300,10 @@
 				Base,
 			);
 			mainGroup = F4ECC426296362CF0054EB01;
+			packageReferences = (
+				F4ECC496296384C20054EB01 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F4ECC499296385070054EB01 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = F4ECC430296362CF0054EB01 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -598,6 +610,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4ECC496296384C20054EB01 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F4ECC499296385070054EB01 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4ECC497296384C20054EB01 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4ECC496296384C20054EB01 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F4ECC49A296385070054EB01 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4ECC499296385070054EB01 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4ECC427296362CF0054EB01 /* Project object */;
 }
