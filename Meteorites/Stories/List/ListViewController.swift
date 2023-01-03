@@ -12,20 +12,24 @@ class ListViewController: BaseViewController<ListViewModel>, Storyboarded {
 
     private let refreshControl = UIRefreshControl()
     private var registeredCells: Set<String> = []
-
+    private var timer: Timer?
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.refreshControl = refreshControl
-        refreshControl.addTarget(self, action: #selector(sendRequest(_:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(sendRequest), for: .valueChanged)
         viewModel.meteorites.bind { [weak self] in
             self?.registerCells()
             self?.tableView.reloadData()
         }
+        timer = Timer.scheduledTimer(withTimeInterval: 86400,
+                                     repeats: true) { [weak self] _ in
+            self?.sendRequest()
+        }
     }
 
-    @objc private func sendRequest(_: Any) {
+    @objc private func sendRequest() {
         viewModel.sendRequest()
             .ensure { [weak self] in
                 self?.refreshControl.endRefreshing()
