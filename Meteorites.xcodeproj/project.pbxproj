@@ -54,6 +54,7 @@
 		F4ECC4BA29643A0A0054EB01 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4B929643A0A0054EB01 /* EmptyCell.swift */; };
 		F4ECC4BC29643A490054EB01 /* EmptyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4BB29643A490054EB01 /* EmptyCellViewModel.swift */; };
 		F4ECC4BE29643A6F0054EB01 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC4BD29643A6F0054EB01 /* EmptyCell.xib */; };
+		F4F2C26929645BDB007C5DE9 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C26829645BDB007C5DE9 /* CustomAnnotation.swift */; };
 		F4F2C26B29645BF9007C5DE9 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2C26A29645BF9007C5DE9 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,7 @@
 		F4ECC4B929643A0A0054EB01 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
 		F4ECC4BB29643A490054EB01 /* EmptyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCellViewModel.swift; sourceTree = "<group>"; };
 		F4ECC4BD29643A6F0054EB01 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
+		F4F2C26829645BDB007C5DE9 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		F4F2C26A29645BF9007C5DE9 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 				F4ECC46629636C9C0054EB01 /* BaseView */,
 				F4ECC47529636E2E0054EB01 /* Observable.swift */,
 				F4ECC4AB296424600054EB01 /* Meteorite.swift */,
+				F4F2C26829645BDB007C5DE9 /* CustomAnnotation.swift */,
 				F4F2C26A29645BF9007C5DE9 /* Connectivity.swift */,
 			);
 			path = Common;
@@ -467,6 +470,7 @@
 				F4ECC46A29636C9C0054EB01 /* BaseViewModel.swift in Sources */,
 				F4ECC4B62964397A0054EB01 /* Collection.swift in Sources */,
 				F4ECC4A329638E140054EB01 /* EndPoints.swift in Sources */,
+				F4F2C26929645BDB007C5DE9 /* CustomAnnotation.swift in Sources */,
 				F4ECC4892963765C0054EB01 /* Storyboarded.swift in Sources */,
 				F4ECC4BC29643A490054EB01 /* EmptyCellViewModel.swift in Sources */,
 				F4ECC49129637A100054EB01 /* MapViewModel.swift in Sources */,
