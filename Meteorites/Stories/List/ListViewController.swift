@@ -9,23 +9,28 @@ import UIKit
 
 class ListViewController: BaseViewController<ListViewModel>, Storyboarded {
     @IBOutlet var tableView: UITableView!
-//    @IBOutlet var requestButton: UIButton!
 
+    private let refreshControl = UIRefreshControl()
     private var registeredCells: Set<String> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(sendRequest(_:)), for: .valueChanged)
         viewModel.meteorites.bind { [weak self] in
             self?.registerCells()
             self?.tableView.reloadData()
         }
     }
 
-//    @IBAction func requestButtonTap(_: Any) {
-//        viewModel.sendRequest()
-//    }
+    @objc private func sendRequest(_: Any) {
+        viewModel.sendRequest()
+            .ensure { [weak self] in
+                self?.refreshControl.endRefreshing()
+            }.cauterize()
+    }
 
     private func registerCells() {
         let reusableIdentifier = ListCellViewModel.reusableIdentifier

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import PromiseKit
 import RealmSwift
 
 class ListViewModel: BaseViewModel {
@@ -17,17 +18,21 @@ class ListViewModel: BaseViewModel {
         bindListener()
     }
 
-    func sendRequest() {
+    func sendRequest() -> Promise<Void> {
         let endPoint = EndPoints.filtered(fromDate: "2011-01-01T00:00:00".getDate(), fall: .fell)
         let urlTaks = URLTask(endPoint: endPoint)
-        apiService.request(of: Meteorits.self, urlTask: urlTaks)
+        return apiService.request(of: Meteorits.self, urlTask: urlTaks)
             .done { [weak self] meteorites in
-                self?.databaseService.create(objects: meteorites)
-                    .done { meteorites in
-                        print("Saved \(meteorites.count) meteorites")
-                    }.catch { error in
-                        print(error)
-                    }
+                self?.saveMeteorites(meteorites)
+            }.then {
+                Promise { $0.fulfill_() }
+            }
+    }
+
+    private func saveMeteorites(_ meteorites: Meteorits) {
+        databaseService.create(objects: meteorites)
+            .done { meteorites in
+                print("Saved \(meteorites.count) meteorites")
             }.catch { error in
                 print(error)
             }
