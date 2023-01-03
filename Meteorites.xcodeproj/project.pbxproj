@@ -42,11 +42,11 @@
 		F4ECC49B296385070054EB01 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC49A296385070054EB01 /* PromiseKit */; };
 		F4ECC49D296389E70054EB01 /* NetworServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC49C296389E70054EB01 /* NetworServiceConstants.swift */; };
 		F4ECC49F29638BE90054EB01 /* URLTaskStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC49E29638BE90054EB01 /* URLTaskStructure.swift */; };
-		F4ECC4A129638D580054EB01 /* ServerResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A029638D580054EB01 /* ServerResponses.swift */; };
 		F4ECC4A329638E140054EB01 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A229638E140054EB01 /* EndPoints.swift */; };
 		F4ECC4A5296423060054EB01 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A4296423060054EB01 /* String.swift */; };
 		F4ECC4A82964243F0054EB01 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC4A72964243F0054EB01 /* Realm */; };
 		F4ECC4AA2964243F0054EB01 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC4A92964243F0054EB01 /* RealmSwift */; };
+		F4ECC4AC296424600054EB01 /* Meteorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4AB296424600054EB01 /* Meteorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,9 +85,9 @@
 		F4ECC49229637A320054EB01 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		F4ECC49C296389E70054EB01 /* NetworServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworServiceConstants.swift; sourceTree = "<group>"; };
 		F4ECC49E29638BE90054EB01 /* URLTaskStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTaskStructure.swift; sourceTree = "<group>"; };
-		F4ECC4A029638D580054EB01 /* ServerResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponses.swift; sourceTree = "<group>"; };
 		F4ECC4A229638E140054EB01 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		F4ECC4A4296423060054EB01 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F4ECC4AB296424600054EB01 /* Meteorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +175,7 @@
 				F4ECC46D29636D7C0054EB01 /* UI */,
 				F4ECC46629636C9C0054EB01 /* BaseView */,
 				F4ECC47529636E2E0054EB01 /* Observable.swift */,
-				F4ECC4A029638D580054EB01 /* ServerResponses.swift */,
+				F4ECC4AB296424600054EB01 /* Meteorite.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -419,11 +419,11 @@
 				F4ECC4492963642F0054EB01 /* Configuration.swift in Sources */,
 				F4ECC485296375E10054EB01 /* ListViewController.swift in Sources */,
 				F4ECC450296366560054EB01 /* Coordinator.swift in Sources */,
+				F4ECC4AC296424600054EB01 /* Meteorite.swift in Sources */,
 				F4ECC45A29636ADA0054EB01 /* TabBarViewModel.swift in Sources */,
 				F4ECC481296373BC0054EB01 /* Theme.swift in Sources */,
 				F4ECC49F29638BE90054EB01 /* URLTaskStructure.swift in Sources */,
 				F4ECC46229636B970054EB01 /* ListCoordinator.swift in Sources */,
-				F4ECC4A129638D580054EB01 /* ServerResponses.swift in Sources */,
 				F4ECC433296362CF0054EB01 /* AppDelegate.swift in Sources */,
 				F4ECC49D296389E70054EB01 /* NetworServiceConstants.swift in Sources */,
 			);
