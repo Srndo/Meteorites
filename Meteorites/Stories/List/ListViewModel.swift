@@ -38,8 +38,12 @@ class ListViewModel: BaseViewModel {
             }
     }
 
-    func getCellViewModel(for indexPath: IndexPath) -> ListCellViewModel {
-        ListCellViewModel(meteorite: meteorites.value[indexPath.row])
+    func getCellViewModel(for indexPath: IndexPath) -> ListCellViewModel? {
+        if let meteorite = meteorites.value[safe: indexPath.row] {
+            return ListCellViewModel(meteorite: meteorite)
+        } else {
+            return nil
+        }
     }
 
     private func bindListener() {

@@ -50,6 +50,10 @@
 		F4ECC4B029642E590054EB01 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4AF29642E590054EB01 /* ListCell.swift */; };
 		F4ECC4B229642E620054EB01 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */; };
 		F4ECC4B429642E6E0054EB01 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC4B329642E6E0054EB01 /* ListCell.xib */; };
+		F4ECC4B62964397A0054EB01 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4B52964397A0054EB01 /* Collection.swift */; };
+		F4ECC4BA29643A0A0054EB01 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4B929643A0A0054EB01 /* EmptyCell.swift */; };
+		F4ECC4BC29643A490054EB01 /* EmptyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4BB29643A490054EB01 /* EmptyCellViewModel.swift */; };
+		F4ECC4BE29643A6F0054EB01 /* EmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC4BD29643A6F0054EB01 /* EmptyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +98,10 @@
 		F4ECC4AF29642E590054EB01 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
 		F4ECC4B329642E6E0054EB01 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		F4ECC4B52964397A0054EB01 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		F4ECC4B929643A0A0054EB01 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		F4ECC4BB29643A490054EB01 /* EmptyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCellViewModel.swift; sourceTree = "<group>"; };
+		F4ECC4BD29643A6F0054EB01 /* EmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,7 @@
 		F4ECC46D29636D7C0054EB01 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F4ECC4B8296439FE0054EB01 /* EmptyCell */,
 				F4ECC46F29636DAB0054EB01 /* LoadingView */,
 			);
 			path = UI;
@@ -263,6 +272,7 @@
 			children = (
 				F4ECC47D29636F180054EB01 /* UIView.swift */,
 				F4ECC4A4296423060054EB01 /* String.swift */,
+				F4ECC4B52964397A0054EB01 /* Collection.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,11 +289,29 @@
 		F4ECC4AE29642E490054EB01 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				F4ECC4B7296439EF0054EB01 /* ListCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F4ECC4B7296439EF0054EB01 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
 				F4ECC4AF29642E590054EB01 /* ListCell.swift */,
 				F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */,
 				F4ECC4B329642E6E0054EB01 /* ListCell.xib */,
 			);
-			path = Cells;
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		F4ECC4B8296439FE0054EB01 /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC4B929643A0A0054EB01 /* EmptyCell.swift */,
+				F4ECC4BB29643A490054EB01 /* EmptyCellViewModel.swift */,
+				F4ECC4BD29643A6F0054EB01 /* EmptyCell.xib */,
+			);
+			path = EmptyCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +387,7 @@
 			files = (
 				F4ECC47229636DAC0054EB01 /* LoadingView.xib in Resources */,
 				F4ECC4B429642E6E0054EB01 /* ListCell.xib in Resources */,
+				F4ECC4BE29643A6F0054EB01 /* EmptyCell.xib in Resources */,
 				F4ECC43F296362D00054EB01 /* LaunchScreen.storyboard in Resources */,
 				F4ECC49329637A320054EB01 /* Map.storyboard in Resources */,
 				F4ECC487296375EA0054EB01 /* List.storyboard in Resources */,
@@ -432,10 +461,13 @@
 				F4ECC46C29636D2A0054EB01 /* ShowLoading.swift in Sources */,
 				F4ECC47329636DAC0054EB01 /* LoadingView.swift in Sources */,
 				F4ECC46A29636C9C0054EB01 /* BaseViewModel.swift in Sources */,
+				F4ECC4B62964397A0054EB01 /* Collection.swift in Sources */,
 				F4ECC4A329638E140054EB01 /* EndPoints.swift in Sources */,
 				F4ECC4892963765C0054EB01 /* Storyboarded.swift in Sources */,
+				F4ECC4BC29643A490054EB01 /* EmptyCellViewModel.swift in Sources */,
 				F4ECC49129637A100054EB01 /* MapViewModel.swift in Sources */,
 				F4ECC47E29636F180054EB01 /* UIView.swift in Sources */,
+				F4ECC4BA29643A0A0054EB01 /* EmptyCell.swift in Sources */,
 				F4ECC4492963642F0054EB01 /* Configuration.swift in Sources */,
 				F4ECC485296375E10054EB01 /* ListViewController.swift in Sources */,
 				F4ECC450296366560054EB01 /* Coordinator.swift in Sources */,
