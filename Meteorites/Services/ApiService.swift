@@ -12,12 +12,17 @@ import PromiseKit
 class ApiService {
     enum Errors: Error {
         case cannotDecode
+        case notInternetConnection
     }
 
     let decoder = JSONDecoder()
 
     func request<T: Decodable>(of type: T.Type, urlTask: URLTaskConfiguration) -> Promise<T> {
         Promise { seal in
+            if !Connectivity.isConnectedToInternet() {
+                seal.reject(Errors.notInternetConnection)
+                return
+            }
             AF.request(urlTask)
                 .responseData(queue: .global()) { response in
                     print(response.debugDescription)
