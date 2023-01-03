@@ -5,6 +5,7 @@
 //  Created by Simon Sestak on 03/01/2023.
 //
 
+import CoreLocation
 import RealmSwift
 
 final class Meteorite: Object, Decodable {
@@ -43,6 +44,13 @@ final class Meteorite: Object, Decodable {
         mass = try container.decodeIfPresent(String.self, forKey: .mass)
         computedRegionCbhkFwbd = try container.decodeIfPresent(String.self, forKey: .computedRegionCbhkFwbd)
         computedRegionNnqa25F4 = try container.decodeIfPresent(String.self, forKey: .computedRegionNnqa25F4)
+    }
+
+    func getLocation() -> CLLocationCoordinate2D? {
+        if let geolocation, let long = Double(geolocation.longitude), let lat = Double(geolocation.latitude) {
+            return CLLocationCoordinate2D(latitude: lat, longitude: long)
+        }
+        return nil
     }
 }
 

@@ -619,6 +619,8 @@
 				DEVELOPMENT_TEAM = Y7K69XGKB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meteorites/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Meteorites would like to use your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Meteorites would like to use your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
@@ -648,6 +650,8 @@
 				DEVELOPMENT_TEAM = Y7K69XGKB2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meteorites/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Meteorites would like to use your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Meteorites would like to use your current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIStatusBarStyle = "";

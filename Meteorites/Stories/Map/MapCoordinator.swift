@@ -16,7 +16,6 @@ class MapCoordinator: Coordinator, SuperTabBarItemCoordinator {
         viewController.tabBarItem = UITabBarItem(title: "Map",
                                                  image: icon,
                                                  selectedImage: icon)
-        viewController.view.backgroundColor = .red
         return viewController
     }
 }

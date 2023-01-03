@@ -47,14 +47,16 @@ class ListViewModel: BaseViewModel {
     }
 
     private func bindListener() {
-        notificationToken = databaseService.bindListener(for: Meteorite.self,
-                                                         reactionToChanges: { [weak self] results in
-                                                             switch results {
-                                                             case let .error(error):
-                                                                 print(error)
-                                                             default:
-                                                                 self?.meteorites.value = self?.databaseService.getElementsFromDB(of: Meteorite.self) ?? []
-                                                             }
-                                                         })
+        notificationToken = databaseService.bindListener(
+            for: Meteorite.self,
+            reactionToChanges: { [weak self] results in
+                switch results {
+                case let .error(error):
+                    print(error)
+                default:
+                    self?.meteorites.value = self?.databaseService.getElementsFromDB(of: Meteorite.self) ?? []
+                }
+            }
+        )
     }
 }

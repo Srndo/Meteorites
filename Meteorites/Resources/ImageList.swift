@@ -10,6 +10,7 @@ import UIKit
 enum ImageList: String {
     case listIcon
     case mapIcon
+    case locationPoint
 
     func getUIImage(renderMode: UIImage.RenderingMode? = nil) -> UIImage? {
         guard let renderMode = renderMode else {
