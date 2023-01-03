@@ -47,6 +47,9 @@
 		F4ECC4A82964243F0054EB01 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC4A72964243F0054EB01 /* Realm */; };
 		F4ECC4AA2964243F0054EB01 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4ECC4A92964243F0054EB01 /* RealmSwift */; };
 		F4ECC4AC296424600054EB01 /* Meteorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4AB296424600054EB01 /* Meteorite.swift */; };
+		F4ECC4B029642E590054EB01 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4AF29642E590054EB01 /* ListCell.swift */; };
+		F4ECC4B229642E620054EB01 /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */; };
+		F4ECC4B429642E6E0054EB01 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ECC4B329642E6E0054EB01 /* ListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +91,9 @@
 		F4ECC4A229638E140054EB01 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		F4ECC4A4296423060054EB01 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F4ECC4AB296424600054EB01 /* Meteorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite.swift; sourceTree = "<group>"; };
+		F4ECC4AF29642E590054EB01 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		F4ECC4B329642E6E0054EB01 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		F4ECC46029636B7C0054EB01 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				F4ECC4AE29642E490054EB01 /* Cells */,
 				F4ECC46129636B970054EB01 /* ListCoordinator.swift */,
 				F4ECC484296375E10054EB01 /* ListViewController.swift */,
 				F4ECC482296375D70054EB01 /* ListViewModel.swift */,
@@ -269,6 +276,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F4ECC4AE29642E490054EB01 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F4ECC4AF29642E590054EB01 /* ListCell.swift */,
+				F4ECC4B129642E620054EB01 /* ListCellViewModel.swift */,
+				F4ECC4B329642E6E0054EB01 /* ListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4ECC47229636DAC0054EB01 /* LoadingView.xib in Resources */,
+				F4ECC4B429642E6E0054EB01 /* ListCell.xib in Resources */,
 				F4ECC43F296362D00054EB01 /* LaunchScreen.storyboard in Resources */,
 				F4ECC49329637A320054EB01 /* Map.storyboard in Resources */,
 				F4ECC487296375EA0054EB01 /* List.storyboard in Resources */,
@@ -398,8 +416,10 @@
 				F4ECC47B29636E7B0054EB01 /* DatabaseService.swift in Sources */,
 				F4ECC47629636E2E0054EB01 /* Observable.swift in Sources */,
 				F4ECC483296375D70054EB01 /* ListViewModel.swift in Sources */,
+				F4ECC4B229642E620054EB01 /* ListCellViewModel.swift in Sources */,
 				F4ECC45F29636B410054EB01 /* SuperTabBarCoordinators.swift in Sources */,
 				F4ECC4A5296423060054EB01 /* String.swift in Sources */,
+				F4ECC4B029642E590054EB01 /* ListCell.swift in Sources */,
 				F4ECC47929636E700054EB01 /* ApiService.swift in Sources */,
 				F4ECC45B29636ADA0054EB01 /* TabBarViewController.swift in Sources */,
 				F4ECC46529636BBB0054EB01 /* MapCoordinator.swift in Sources */,

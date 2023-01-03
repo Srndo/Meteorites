@@ -9,6 +9,7 @@ import PromiseKit
 import RealmSwift
 
 class DatabaseService {
+    typealias ChangesResults<T: Object> = RealmCollectionChange<Results<T>>
     enum Errors: Error {
         case realmNotExists
     }
@@ -46,6 +47,15 @@ class DatabaseService {
 
     func getElementsFromDBFiltred<T: Object>(of _: T.Type, by filter: String, args: Any...) -> [T]? {
         realm?.objects(T.self).filter(filter, args).toArray()
+    }
+
+    func bindListener<T: Object>(for _: T.Type,
+                                 reactionToChanges: @escaping (ChangesResults<T>) -> Void) -> NotificationToken? {
+        guard let realm = realm else { return nil }
+        let results = realm.objects(T.self)
+        return results.observe(on: nil) { changes in
+            reactionToChanges(changes)
+        }
     }
 }
 
