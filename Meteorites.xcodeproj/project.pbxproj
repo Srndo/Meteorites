@@ -44,6 +44,7 @@
 		F4ECC49F29638BE90054EB01 /* URLTaskStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC49E29638BE90054EB01 /* URLTaskStructure.swift */; };
 		F4ECC4A129638D580054EB01 /* ServerResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A029638D580054EB01 /* ServerResponses.swift */; };
 		F4ECC4A329638E140054EB01 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A229638E140054EB01 /* EndPoints.swift */; };
+		F4ECC4A5296423060054EB01 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ECC4A4296423060054EB01 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		F4ECC49E29638BE90054EB01 /* URLTaskStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTaskStructure.swift; sourceTree = "<group>"; };
 		F4ECC4A029638D580054EB01 /* ServerResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponses.swift; sourceTree = "<group>"; };
 		F4ECC4A229638E140054EB01 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		F4ECC4A4296423060054EB01 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				F4ECC47D29636F180054EB01 /* UIView.swift */,
+				F4ECC4A4296423060054EB01 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				F4ECC47629636E2E0054EB01 /* Observable.swift in Sources */,
 				F4ECC483296375D70054EB01 /* ListViewModel.swift in Sources */,
 				F4ECC45F29636B410054EB01 /* SuperTabBarCoordinators.swift in Sources */,
+				F4ECC4A5296423060054EB01 /* String.swift in Sources */,
 				F4ECC47929636E700054EB01 /* ApiService.swift in Sources */,
 				F4ECC45B29636ADA0054EB01 /* TabBarViewController.swift in Sources */,
 				F4ECC46529636BBB0054EB01 /* MapCoordinator.swift in Sources */,
@@ -561,7 +565,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,7 +594,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
