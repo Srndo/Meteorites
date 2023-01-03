@@ -25,7 +25,7 @@ class DatabaseService {
         guard let realm = realm else { return Promise { $0.reject(Errors.realmNotExists) } }
         return Promise { seal in
             realm.writeAsync {
-                realm.add(object, update: .modified)
+                realm.add(object, update: .all)
                 seal.fulfill(object)
             }
         }
@@ -35,7 +35,7 @@ class DatabaseService {
         guard let realm = realm else { return Promise { $0.reject(Errors.realmNotExists) } }
         return Promise { seal in
             realm.writeAsync {
-                objects.forEach { realm.add($0, update: .modified) }
+                objects.forEach { realm.add($0, update: .all) }
                 seal.fulfill(objects)
             }
         }

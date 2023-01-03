@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 import PromiseKit
 import RealmSwift
 
@@ -54,7 +55,21 @@ class ListViewModel: BaseViewModel {
                 case let .error(error):
                     print(error)
                 default:
-                    self?.meteorites.value = self?.databaseService.getElementsFromDB(of: Meteorite.self) ?? []
+                    let meteorites = self?.databaseService.getElementsFromDB(of: Meteorite.self) ?? []
+                    guard let userLocation = self?.appContext.locationManager.location?.coordinate else {
+                        self?.meteorites.value = meteorites
+                        return
+                    }
+
+                    let pointToCompare = CLLocation(latitude: userLocation.latitude, longitude: userLocation.longitude)
+
+                    self?.meteorites.value = meteorites.sorted(by: { lhs, rhs in
+                        guard let lhsLocation = lhs.getLocation() else { return false }
+                        guard let rhsLocation = rhs.getLocation() else { return false }
+                        let lhsCLLoc = CLLocation(latitude: lhsLocation.latitude, longitude: lhsLocation.longitude)
+                        let rhsCLLoc = CLLocation(latitude: rhsLocation.latitude, longitude: rhsLocation.longitude)
+                        return lhsCLLoc.distance(from: pointToCompare) < rhsCLLoc.distance(from: pointToCompare)
+                    })
                 }
             }
         )

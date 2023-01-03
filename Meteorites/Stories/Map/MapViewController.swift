@@ -11,18 +11,12 @@ import UIKit
 
 class MapViewController: BaseViewController<MapViewModel>, Storyboarded {
     @IBOutlet var map: MKMapView!
-
-    let locationManager = CLLocationManager()
+    var locationManager: CLLocationManager { viewModel.appContext.locationManager }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         locationManager.delegate = self
         map.delegate = self
-
-        // Ask for Authorisation from the User.
-        locationManager.requestAlwaysAuthorization()
-        // For use in foreground
-        locationManager.requestWhenInUseAuthorization()
 
         viewModel.meteorites.bind { [weak self] meteorites in
             meteorites.forEach { self?.createPin(for: $0) }
